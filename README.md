@@ -16,18 +16,24 @@ We are interested in developing a qualitative model to classify whether a molecu
 ## 2. Data Processing 
 #### adenot_processing.ipynb
 
-## 3. Random Forest Model 
+## 3. Data Visualization and Dimensionality Reduction
+#### dim_red_feat_analysis.ipynb
+
+## 4. Random Forest Model 
 #### random_forest.ipynb
 
-## 4. Support Vector Machine (SVM) Model 
+## 5. Support Vector Machine (SVM) Model 
 #### svm_model_optimization.ipynb
 #### svm_fragment_extraction.ipynb
 #### svm_feature_extraction.ipynb
 
-## 5. XGBoost Model
+## 6. XGBoost Model
 #### xgboost_optimization.ipynb
 #### xgboost_fragment_extraction.ipynb
 #### xgboost_feature_extraction.ipynb
+
+## 7. Feature and Fragment Analysis
+#### dim_red_feat_analysis.ipynb
 
 
 
