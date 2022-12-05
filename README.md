@@ -36,6 +36,9 @@ We are interested in developing a qualitative model to classify whether a molecu
 ## 7. Ensemble Model
 #### ensemble_model.ipynb
 
+## 8. Model Performance Direct Comparison
+#### figures.ipynb
+
 ## 8. Final Feature and Fragment Analysis for SVM and XGBoost Models
 #### dim_red_feat_analysis.ipynb
 
