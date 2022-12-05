@@ -17,7 +17,7 @@ We are interested in developing a qualitative model to classify whether a molecu
 #### adenot_processing.ipynb
 #### adenot_processed.csv
 
-## 3. Data Visualization and Dimensionality Reduction
+## 3. Data Visualization, Clustering, and Dimensionality Reduction
 #### dim_red_feat_analysis.ipynb
 
 ## 4. Random Forest Model 
