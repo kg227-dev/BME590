@@ -8,9 +8,9 @@
 
 We are interested in developing a qualitative model to classify whether a molecule is capable of crossing the blood-brain barrier (BBB) while improving our chemical understanding of what types of molecules can do so effectively.
 
-#Our Workflow
+# Our Workflow
 
-##1. Data Source
+## 1. Data Source
 #### adenot.csv
 
 ## 2. Data Processing 
