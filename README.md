@@ -15,6 +15,7 @@ We are interested in developing a qualitative model to classify whether a molecu
 
 ## 2. Data Processing 
 #### adenot_processing.ipynb
+#### adenot_processed.csv
 
 ## 3. Data Visualization and Dimensionality Reduction
 #### dim_red_feat_analysis.ipynb
@@ -32,7 +33,10 @@ We are interested in developing a qualitative model to classify whether a molecu
 #### xgboost_fragment_extraction.ipynb
 #### xgboost_feature_extraction.ipynb
 
-## 7. Feature and Fragment Analysis
+## 7. Ensemble Model
+#### ensemble_model.ipynb
+
+## 8. Final Feature and Fragment Analysis for SVM and XGBoost Models
 #### dim_red_feat_analysis.ipynb
 
 
