@@ -11,7 +11,7 @@ We are interested in developing a qualitative model to classify whether a molecu
 # Our Workflow
 
 ## 1. Data Source
-#### adenot.csv
+#### adenot.csv, from: https://pubs.acs.org/doi/pdf/10.1021/ci034205d
 
 ## 2. Data Processing 
 #### adenot_processing.ipynb
