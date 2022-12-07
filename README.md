@@ -11,38 +11,103 @@ We are interested in developing a qualitative model to classify whether a molecu
 # Our Workflow
 
 ## 1. Data Source
+___
 #### Adenot_BBB+.csv, list of permeable drugs and their SMILES
 #### Adenot_BBB-.csv, list of non-permeable drugs and their SMILES
 #### From: https://pubs.acs.org/doi/pdf/10.1021/ci034205d
 
 ## 2. Data Processing 
+___
 #### adenot.csv, combined and labeled BBB+/-
 #### adenot_processing.ipynb
 #### adenot_processed.csv
 
 ## 3. Data Visualization, Clustering, and Dimensionality Reduction
+___
 #### dim_red_feat_analysis.ipynb
 
-## 4. Random Forest Model 
+## 4. Random Forest Model
+___
 #### random_forest.ipynb
+Built a Random Forest Classifier hyperparametrized on n_estimators=100, criterion="gini", and max_depth=20.  Evaluated the model on a random split and scaffold split on "adenot_processed.csv", using accuracy, balanced accuracy, ROC AUC, precision, and recall. 
+<br />  <br /> __Random Split__
+| Metric        | Score           | 
+| ------------- |-------------| 
+| Accuracy      | 0.9538152610441767 |
+| Balanced Accuracy     | 0.8826530612244898      |  
+| ROC AUC |     0.8826530612244897  |   
+| Precision | 0.9456264775413712    |  
+| Recall | 1.0      |  
+
+<br /> __Scaffold Split__
+| Metric        | Score           | 
+| ------------- |-------------| 
+| Accuracy      | 0.8012048192771084 |
+| Balanced Accuracy     | 0.777027027027027     |  
+| ROC AUC |     0.777027027027027  |   
+| Precision | 0.736    |  
+| Recall | 1.0      |  
+
 
 ## 5. Support Vector Machine (SVM) Model 
+___
 #### svm_model_optimization.ipynb
+Built a Support Vector Machine Classifier hyperparametrized on C=0.1, gamma=1, kernel="linear".  Evaluated the model on a random split and scaffold split on "adenot_processed.csv", using accuracy, balanced accuracy, ROC AUC, precision, and recall. 
+<br />  <br /> __Random Split__
+| Metric        | Score           | 
+| ------------- |-------------| 
+| Accuracy      | 0.963855421686747 |
+| Balanced Accuracy     | 0.9158673469387755     |  
+| ROC AUC |     0.9158673469387756  |   
+| Precision | 0.961352657004831    |  
+| Recall | 0.995      |  
+
+<br /> __Scaffold Split__
+| Metric        | Score           | 
+| ------------- |-------------| 
+| Accuracy      | 0.8644578313253012 |
+| Balanced Accuracy     | 0.8499559341950647     |  
+| ROC AUC |     0.8499559341950647  |   
+| Precision | 0.8116591928251121    |  
+| Recall | 0.9836956521739131      |  
 #### svm_fragment_extraction.ipynb
 #### svm_feature_extraction.ipynb
 
 ## 6. XGBoost Model
+___
 #### xgboost_optimization.ipynb
+Built a XGBoost Classifier hyperparametrized on learning_rate=0.1, n_estimators=1000, max_depth=4, min_child_weight=3, gamma=0, subsample=0.8, colsample_bytree=0.85, reg_alpha=1e-05, objective="binary:logistic", nthread=4, and scale_pos_weight=1. Evaluated the model on a random split and scaffold split on "adenot_processed.csv", using accuracy, balanced accuracy, ROC AUC, precision, and recall. 
+<br />  <br /> __Random Split__
+| Metric        | Score           | 
+| ------------- |-------------| 
+| Accuracy      | 0.9558232931726908 |
+| Balanced Accuracy     | 0.9070153061224491     |  
+| ROC AUC |     0.9070153061224491  |   
+| Precision | 0.9587378640776699    |  
+| Recall | 0.9875      |  
+
+<br /> __Scaffold Split__
+| Metric        | Score           | 
+| ------------- |-------------| 
+| Accuracy      | 0.8674698795180723 |
+| Balanced Accuracy     | 0.8520123384253819     |  
+| ROC AUC |     0.8520123384253818  |   
+| Precision | 0.8097345132743363    |  
+| Recall | 0.9945652173913043      |  
+
 #### xgboost_fragment_extraction.ipynb
 #### xgboost_feature_extraction.ipynb
 
 ## 7. Ensemble Model
+___
 #### ensemble_model.ipynb
 
 ## 8. Model Performance Direct Comparison
+___
 #### figures.ipynb
 
 ## 8. Final Feature and Fragment Analysis for SVM and XGBoost Models
+___
 #### dim_red_feat_analysis.ipynb
 
 
