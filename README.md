@@ -70,13 +70,13 @@ Built a Support Vector Machine Classifier hyperparametrized on C=0.1, gamma=1, k
 | ROC AUC |     0.8499559341950647  |   
 | Precision | 0.8116591928251121    |  
 | Recall | 0.9836956521739131      |  
-#### svm_fragment_extraction.ipynb
 #### svm_feature_extraction.ipynb
+Extracted feature importances of tuned SVM and displayed the top 10 features with the highest importances. 
 
 ## 6. XGBoost Model
 ___
 #### xgboost_optimization.ipynb
-Built a XGBoost Classifier hyperparametrized on learning_rate=0.1, n_estimators=1000, max_depth=4, min_child_weight=3, gamma=0, subsample=0.8, colsample_bytree=0.85, reg_alpha=1e-05, objective="binary:logistic", nthread=4, and scale_pos_weight=1. Evaluated the model on a random split and scaffold split on "adenot_processed.csv", using accuracy, balanced accuracy, ROC AUC, precision, and recall. 
+Built a XGBoost Classifier tuned on learning_rate=0.1, n_estimators=1000, max_depth=4, min_child_weight=3, gamma=0, subsample=0.8, colsample_bytree=0.85, reg_alpha=1e-05, objective="binary:logistic", nthread=4, and scale_pos_weight=1. Evaluated the model on a random split and scaffold split on "adenot_processed.csv", using accuracy, balanced accuracy, ROC AUC, precision, and recall. 
 <br />  <br /> __Random Split__
 | Metric        | Score           | 
 | ------------- |-------------| 
@@ -94,17 +94,38 @@ Built a XGBoost Classifier hyperparametrized on learning_rate=0.1, n_estimators=
 | ROC AUC |     0.8520123384253818  |   
 | Precision | 0.8097345132743363    |  
 | Recall | 0.9945652173913043      |  
-
-#### xgboost_fragment_extraction.ipynb
 #### xgboost_feature_extraction.ipynb
+Extracted feature importances of tuned XGBoost and displayed the top 10 features with the highest importances. 
+
 
 ## 7. Ensemble Model
 ___
 #### ensemble_model.ipynb
+Built ensemble voting classifier with tuned SVM, XGBoost, and Random Forest classifiers and equal voting.  Used soft voting, which involves summing the predicted probabilities for class labels and predicting the class label with the largest sum probability. Evaluated the model on a random split and scaffold split on "adenot_processed.csv", using accuracy, balanced accuracy, ROC AUC, precision, and recall. 
+<br />  <br /> __Random Split__
+| Metric        | Score           | 
+| ------------- |-------------| 
+| Accuracy      | 0.9618473895582329 |
+| Balanced Accuracy     | 0.910765306122449     |  
+| ROC AUC |     0.910765306122449  |   
+| Precision | 0.9590361445783132    |  
+| Recall | 0.995      |  
+
+<br /> __Scaffold Split__
+| Metric        | Score           | 
+| ------------- |-------------| 
+| Accuracy      | 0.8614457831325302 |
+| Balanced Accuracy     | 0.8445945945945945     |  
+| ROC AUC |     0.8445945945945946  |   
+| Precision | 0.8    |  
+| Recall | 1.0      | 
+
+
 
 ## 8. Model Performance Direct Comparison
 ___
 #### figures.ipynb
+Compiled the performance metrics from each notebook and created bar plots and radar plots. 
 
 ## 8. Final Feature and Fragment Analysis for SVM and XGBoost Models
 ___
