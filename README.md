@@ -21,7 +21,7 @@ ___
 #### adenot_processing.ipynb
 #### adenot.csv, combined and labeled BBB+/-
 #### adenot_processed.csv
-Perform data processing steps such as: Labeling, deleting missing data, clean and wash SMILES, remove duplicates.
+Perform data processing steps such as: Labeling, deleting missing data, clean and wash SMILES, remove duplicates. Also obtained Morgan Fingerprints and stored them in processed csv file.
 
 ## 3. Data Visualization, Clustering, and Dimensionality Reduction
 ___
