@@ -135,7 +135,7 @@ ___
 For both SVM and XGBoost Models:
 1. Examined percentage of permeable/non-permeable classes with respective top features present
     - Permeable molecules were highly represented by top SVM model features
-    - Almost only non-permeable molecules were highly represented by top XGBoost model features
+    - Almost only non-permeable molecules were represented by top XGBoost model features
 
 2. Examined percentage of clusters with respective top features present
     - Cluster 0 was highly represented by top XGBoost model features
