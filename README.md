@@ -129,7 +129,15 @@ ___
 #### figures.ipynb
 Compiled the performance metrics from each notebook and created bar plots and radar plots. 
 
-## 8. Final Feature and Fragment Analysis for SVM and XGBoost Models
+## 9. Statistical Analysis
+___
+### random_forest.ipynb, svm_model_optimization.ipynb, xgboost_optimization.ipynb, ensemble_model.ipynb
+Performed a 4-fold split on both scaffold and randomly split data. Computed the MCC value for all 4 folds. Performed a student T-test on the MCC value populations for both split types to identify any statistically significant difference in performance between scaffold and random for all 4 optimized models. Displayed box plots to show differences in the MCC populations. Only the random forest model was found to perform significantly worse on a scaffold split than a random split, with a p-value smaller than 0.05.
+
+### model_MCC_stat_comparison.ipynb
+Again performed a 4-fold split on both scaffold and randomly split data and computed the MCC value for all 4 folds.  Performed a student T-test on all pairwise combinations model MCC populations with their respective split. No model was found to significantly outperform any other model statistically on both scaffold and random split (all p-values were greater than 0.05). 
+
+## 10. Final Feature and Fragment Analysis for SVM and XGBoost Models
 ___
 #### dim_red_feat_analysis.ipynb
 For both SVM and XGBoost Models:
