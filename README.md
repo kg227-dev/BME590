@@ -18,13 +18,15 @@ ___
 
 ## 2. Data Processing 
 ___
-#### adenot.csv, combined and labeled BBB+/-
 #### adenot_processing.ipynb
+#### adenot.csv, combined and labeled BBB+/-
 #### adenot_processed.csv
+Perform data processing steps such as: Labeling, deleting missing data, clean and wash SMILES, remove duplicates.
 
 ## 3. Data Visualization, Clustering, and Dimensionality Reduction
 ___
 #### dim_red_feat_analysis.ipynb
+Performed K-Means clustering (k=5) to assist in visualizing clustered data. For visualization, performed principal component analysis and t-SNE, and plotted data class distribution. 
 
 ## 4. Random Forest Model
 ___
@@ -130,6 +132,12 @@ Compiled the performance metrics from each notebook and created bar plots and ra
 ## 8. Final Feature and Fragment Analysis for SVM and XGBoost Models
 ___
 #### dim_red_feat_analysis.ipynb
+For both SVM and XGBoost Models:
+1. Examined percentage of permeable/non-permeable classes with respective top features present
+2. Examined percentage of clusters with respective top features present
+Performed example fragment analysis:
+1. Cluster 0 analysis based on top features from the XGBoost model
+2. Cluster 3 analysis based on top features from the SVM model
 
 
 
