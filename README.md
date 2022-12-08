@@ -134,10 +134,15 @@ ___
 #### dim_red_feat_analysis.ipynb
 For both SVM and XGBoost Models:
 1. Examined percentage of permeable/non-permeable classes with respective top features present
-2. Examined percentage of clusters with respective top features present
+    Permeable molecules were highly represented by top SVM model features
+    Almost only non-permeable molecules were highly represented by top XGBoost model features
+3. Examined percentage of clusters with respective top features present
+    Cluster 0 was highly represented by top XGBoost model features
+    Cluster 3 was highly represented by top SVM model features
+
 Performed example fragment analysis:
-1. Cluster 0 analysis based on top features from the XGBoost model
-2. Cluster 3 analysis based on top features from the SVM model
+1. Cluster 0 (beta-lactam antibiotic) fragment analysis based on top features from the XGBoost model
+2. Cluster 3 (corticosteroid) fragment analysis based on top features from the SVM model
 
 
 
